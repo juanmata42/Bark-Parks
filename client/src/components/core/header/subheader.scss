@@ -1,0 +1,69 @@
+@import '../../../variables.scss';
+.main-header__subnav {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 10;
+}
+.sub-header__nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $secondary-color;
+  padding: 5px;
+  border-radius: 15px;
+  animation: 0.2s ease-out 0s 1 growfromsocial;
+  margin: 5px;
+}
+.growFromSocial {
+  animation: 0.2s ease-out 0s 1 growfromsocial;
+}
+.growFromProfile {
+  animation: 0.2s ease-out 0s 1 growfromprofile;
+}
+.sub-header__link {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: $subtitle;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+}
+.sub-header__link-active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  color: $base-color;
+}
+.sub-header__link:hover {
+  color: $base-color;
+}
+.sub-header__link:hover path {
+  fill: $base-color;
+}
+
+.sub-header__link:hover rect {
+  fill: $base-color;
+}
+.sub-header__link:hover circle {
+  fill: $base-color;
+}
+@keyframes growfromsocial {
+  0% {
+    transform: translateX(-20%) scale(0.2);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+@keyframes growfromprofile {
+  0% {
+    transform: translateX(20%) scale(0.2);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}

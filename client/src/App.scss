@@ -1,0 +1,43 @@
+@import './variables.scss';
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: $text-color;
+}
+.park-card {
+  margin: 10px;
+  height: 270px;
+  border-radius: 15px;
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.filter-dark {
+  fill: $text-color;
+}
+.filter-green {
+  fill: $main-color;
+}
+.filter-brown {
+  fill: $secondary-color;
+}
+.filter-white {
+  fill: $base-color;
+}
+
+.header-icon {
+  height: 40px;
+}
+
+.page-with-subheader {
+  padding-top: 80px;
+}

@@ -1,0 +1,74 @@
+@import '../../variables.scss';
+.kennel-separator {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient($main-color 50%, $secondary-color 50%);
+}
+.friends-outside {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.friends-outside__container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.friends-outside__body {
+  display: flex;
+  gap: 10px;
+}
+.friends-outside__park {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.friends-outside__park__name {
+  font-weight: $subtitle;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.friends-outside__park__photo {
+  border-radius: 15px;
+  height: 210px;
+  width: 210px;
+  object-fit: cover;
+}
+
+.friends-outside__friends__profilephoto {
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+.friends-outside__friends {
+  display: flex;
+  gap: 10px;
+  height: 210px;
+  width: 210px;
+  flex-wrap: wrap;
+}
+.friends-outside__friends__extra {
+  font-weight: $light;
+  text-align: right;
+  width: 100%;
+}
+@media only screen and (max-width: 490px) {
+  .friends-outside__park__photo {
+    height: 150px;
+    width: 150px;
+  }
+  .friends-outside__friends {
+    height: 150px;
+    width: 150px;
+  }
+  .friends-outside__friends__profilephoto {
+    height: 70px;
+    width: 70px;
+  }
+}

@@ -1,0 +1,54 @@
+@import '../../../variables.scss';
+.main-header {
+}
+.main-header__nav {
+  width: 100%;
+  background-color: $main-color;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.main-header__nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.main-header__nav-item {
+  animation: 0.2s ease-out 0s 1 grow;
+}
+.main-header__link {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: $subtitle;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-header__link:hover {
+  color: $secondary-color;
+}
+.main-header__link:hover path {
+  fill: $secondary-color;
+}
+
+.main-header__link:hover rect {
+  fill: $secondary-color;
+}
+
+.header-icon {
+  height: 40px;
+}
+.active {
+  fill: $secondary-color !important;
+  color: $secondary-color;
+}
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

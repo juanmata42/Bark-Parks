@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+.about-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  gap: 50px;
+  width: 100%;
+}
+.about-text {
+  width: 300px;
+  text-align: center;
+  line-height: 30px;
+}

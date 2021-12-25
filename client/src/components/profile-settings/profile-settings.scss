@@ -1,0 +1,110 @@
+@import '../../variables.scss';
+.settings-container {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  overflow-y: auto;
+  padding-top: 100px !important;
+}
+@media only screen and (max-width: 600px) {
+  .settings-container {
+    padding-top: 250px !important;
+  }
+}
+.id-copy {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: $text-color;
+  font-size: 30px;
+  font-weight: $subtitle;
+  width: fit-content;
+  position: relative;
+  height: 60px;
+}
+.id-copy:active::before {
+  position: absolute;
+  content: 'ID COPIED';
+  top: 60px;
+}
+.info-container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  padding: 10px;
+}
+.profilePhoto {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.profilePhotoLink,
+.settings__name,
+.bark-link {
+  border-radius: 15px;
+  padding: 10px;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: $broken-white;
+}
+.settings__description {
+  border-radius: 15px;
+  padding: 10px;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: $broken-white;
+}
+.bark-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settings__submit {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: $text-color;
+  font-size: 30px;
+  font-weight: $subtitle;
+  width: fit-content;
+  position: relative;
+  background-color: $main-color;
+}
+.deleteUser {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: $base-color;
+  font-size: 30px;
+  font-weight: $subtitle;
+  width: fit-content;
+  position: relative;
+  background-color: $text-color;
+}
+/* for v2 if time enough 
+svg input:checked {
+  fill: $main-color;
+}
+
+.notifications-checkbox:hover {
+  fill: $main-color;
+}
+
+input[type='checkbox']:checked + .notifications-checkbox {
+  fill: $main-color;
+} */

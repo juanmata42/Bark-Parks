@@ -1,0 +1,115 @@
+@import '../../../variables.scss';
+.dog-card {
+  margin: 10px;
+  height: 230px;
+  border-radius: 15px;
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 20px;
+  background-color: $base-color;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .dog-card {
+    width: 90vw;
+    font-size: 15px;
+  }
+  .dog-card-description {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 7 !important;
+    -webkit-box-orient: vertical !important;
+  }
+  .dog-card__name {
+    height: 35px !important;
+  }
+  .dog-card-description {
+    height: 125px !important;
+  }
+}
+
+.dog-card__top {
+  height: 160px;
+  display: flex;
+  gap: 10px;
+}
+.dog-card__visual {
+  height: 160px;
+  border-radius: 15px;
+}
+.dog-card__pic {
+  height: 160px;
+  width: 50%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.dog-card__identity {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dog-card__name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: $subtitle;
+  width: 100%;
+  direction: ltr;
+  height: 40px;
+}
+.dog-card-description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: $light;
+  width: 100%;
+  height: 120px;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+.dog-card__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.dog-card__going {
+  font-weight: $light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 480px;
+}
+.dog-card__location-name {
+  max-width: 40vw;
+  width: 240px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  direction: ltr;
+}
+.delete-friend-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border-radius: 50%;
+  border: solid $text-color 1px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete-friend-btn:hover {
+  background-color: $secondary-color;
+}
+.dog-card__notifications {
+  display: flex;
+  justify-content: center;
+}

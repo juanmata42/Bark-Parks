@@ -1,0 +1,39 @@
+@import '../../../variables.scss';
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.dropdown-menu__title {
+  font-weight: $subtitle;
+  font-size: 20px;
+}
+.dropdown-menu__box {
+  font-weight: $subtitle;
+  font-size: 15px;
+  background-color: $broken-white;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+}
+@media only screen and (min-width: 600px) {
+  .dropdown-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  .dropdown-menu__title {
+    font-weight: $subtitle;
+    font-size: 40px;
+  }
+  .dropdown-menu__box {
+    font-weight: $subtitle;
+    font-size: 20px;
+    background-color: $broken-white;
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+  }
+}

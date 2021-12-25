@@ -1,0 +1,40 @@
+@import '../../variables.scss';
+.post-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  position: relative;
+}
+.post__header {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  gap: 30px;
+}
+.post__user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-start;
+}
+.post__profilePhoto {
+  border-radius: 15px;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+.post__name {
+  font-weight: $light;
+}
+.post__message {
+  display: flex;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+.posts__title {
+  font-weight: $title;
+  font-size: 40px;
+  padding: 20px;
+}

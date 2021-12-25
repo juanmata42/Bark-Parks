@@ -1,0 +1,15 @@
+@import '../../../variables.scss';
+.background-white {
+  background-color: $base-color;
+}
+.main {
+  overflow-y: auto;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-y: hidden;
+}

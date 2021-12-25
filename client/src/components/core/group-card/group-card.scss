@@ -1,0 +1,233 @@
+@import '../../../variables.scss';
+.group-card {
+  margin: 10px;
+  border-radius: 15px;
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 20px;
+  background-color: $base-color;
+  position: relative;
+}
+.leave-group-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $base-color;
+  border-radius: 0 0 15px 15px;
+  padding: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leave-group-btn:hover svg {
+  fill: $secondary-color;
+}
+.group-card__top {
+  height: 380px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.group-card__meetups {
+  padding: 10px;
+}
+.group-card__bottom {
+  padding: 10px;
+  height: 80px;
+}
+@media only screen and (max-width: 490px) {
+  .group-card {
+    width: 90vw;
+    font-size: 15px;
+  }
+  .group-card__top {
+    height: 300px !important;
+  }
+  .group-card__description {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 7 !important;
+    -webkit-box-orient: vertical !important;
+  }
+  .group-card__title {
+    height: 35px !important;
+    font-size: 30px !important;
+  }
+
+  .group__photo {
+    height: 150px !important;
+    width: 150px !important;
+  }
+  .group__members {
+    height: 150px !important;
+    width: 150px !important;
+  }
+  .group__member__profilePhoto {
+    height: 70px !important;
+    width: 70px !important;
+  }
+  .meetups-title {
+    font-size: 20px !important;
+  }
+}
+.group-card__title {
+  font-weight: $subtitle;
+  width: 100%;
+  font-size: 40px;
+  padding-left: 5%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  direction: ltr;
+}
+.group-card__social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.group-card__description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: $light;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  padding-left: 5%;
+}
+
+.delete-group-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border-radius: 50%;
+  border: solid $text-color 1px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete-group-btn:hover {
+  background-color: $secondary-color;
+}
+.group-card__notifications {
+  display: flex;
+  justify-content: center;
+}
+.kennel-separator {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient($main-color 50%, $secondary-color 50%);
+}
+
+.group__photo {
+  border-radius: 15px;
+  height: 210px;
+  width: 210px;
+  object-fit: cover;
+}
+
+.group__member__profilePhoto {
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+.group__members {
+  display: flex;
+  gap: 10px;
+  height: 210px;
+  width: 210px;
+  flex-wrap: wrap;
+}
+.group__members__extra {
+  font-weight: $light;
+  text-align: right;
+  width: 100%;
+}
+.group-card__meetups {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.meetups-title {
+  font-weight: $subtitle;
+  font-size: 30px;
+  padding-left: 5%;
+}
+.meetups-list {
+  width: 90%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+}
+.meetup {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  gap: 10px;
+  border-radius: 15px;
+}
+.meetup:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.meetup-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  direction: ltr;
+  width: 90%;
+}
+.meetup-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  gap: 10px;
+  border-radius: 15px;
+}
+.meetup-form__btn:hover svg {
+  fill: $main-color;
+}
+.add-meetup-input {
+  border-radius: 15px;
+  padding: 10px;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: $broken-white;
+  overflow: hidden;
+  width: 80%;
+  max-width: 40vw;
+}
+.group-add-friend__form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.add-friend-group__friendId {
+  border-radius: 15px;
+  padding: 10px;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: $broken-white;
+  overflow: hidden;
+  width: 80%;
+  max-width: 40vw;
+}

@@ -1,0 +1,63 @@
+@import '../../../variables.scss';
+.add-friend__form {
+  margin: 10px;
+  height: 230px;
+  border-radius: 15px;
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 20px;
+  background-color: $base-color;
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  .add-friend__form {
+    width: 90vw;
+    font-size: 15px;
+  }
+}
+.add-friend__top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.addFriendBtn:hover {
+  fill: $main-color;
+}
+.addFriendTitle {
+  font-weight: $subtitle;
+  font-size: 30px;
+}
+.add-friend__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.add-friend__friendId {
+  border-radius: 15px;
+  padding: 10px;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: $broken-white;
+  text-align: right;
+  overflow: hidden;
+  width: 200px;
+  max-width: 40vw;
+}
+.add-friend__text {
+  border-radius: 15px;
+  padding: 10px;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: $broken-white;
+  width: 100%;
+  height: 75px;
+}

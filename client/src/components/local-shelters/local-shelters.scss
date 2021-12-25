@@ -1,0 +1,64 @@
+@import '../../variables.scss';
+.shelters-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.shelters-search {
+  width: 100%;
+  padding: 30px;
+}
+.shelters-body {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.region-name {
+  font-weight: $subtitle;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.region__shelter-list li {
+  margin-top: 5px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.shelter-number {
+  margin-left: 30px;
+}
+.shelter-form__container {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.shelter-input__container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-width: 90vw;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.shelter-form__input {
+  border-style: none;
+  border-radius: 5px;
+  background-color: $broken-white;
+  padding: 5px;
+}
+.shelter-form__submit {
+  border: none;
+  height: 20px;
+  width: 50px;
+  background-color: $secondary-color;
+  color: $base-color;
+  font-size: 15px;
+  font-weight: $text;
+  border-radius: 15px;
+}

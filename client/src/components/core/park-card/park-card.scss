@@ -1,0 +1,83 @@
+@import '../../../variables.scss';
+.park-card {
+  margin: 10px;
+  height: 270px;
+  border-radius: 15px;
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 20px;
+  background-color: $base-color;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .park-card {
+    width: 90vw;
+    font-size: 15px;
+  }
+}
+.park-card__visual {
+  height: 160px;
+  border-radius: 15px;
+}
+.park-card__pic {
+  height: 160px;
+  width: 50%;
+  border-radius: 15px 0 0 15px;
+  position: relative;
+  cursor: pointer;
+}
+.park-card__copyId {
+  position: absolute;
+  border-radius: 5px 5px 0 0;
+  z-index: 5;
+  bottom: 0px;
+  padding: 5px;
+  left: 42%;
+  box-shadow: inset 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+.park-card__copyId:active::before {
+  position: absolute;
+  content: 'ID COPIED';
+  bottom: 30px;
+}
+.park-card__map {
+  height: 160px;
+  width: 50%;
+  border-radius: 0 15px 15px 0;
+}
+.park-card__identity {
+  display: flex;
+  justify-content: center;
+}
+.park-card__rating {
+  width: 240px;
+  display: flex;
+  justify-content: center;
+}
+.park-card__name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: $light;
+  text-align: center;
+  width: 240px;
+  direction: ltr;
+  padding-top: 7px;
+}
+.park-card__fav,
+.park-card__going {
+  font-weight: $light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+}
+.park-card__notifications {
+  display: flex;
+  justify-content: center;
+}

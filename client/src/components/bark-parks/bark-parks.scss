@@ -1,0 +1,95 @@
+@import '../../variables.scss';
+.parks-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.parks__filter-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100vw;
+  padding: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .parks__filter-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 5vw;
+  }
+  .add-dogSpot__form {
+    width: 90vw !important;
+  }
+}
+.add-dogSpot__form {
+  margin: 10px;
+  height: 270px;
+  border-radius: 15px;
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+  background-color: $base-color;
+  position: relative;
+}
+
+.add-dogSpot__top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.adddogSpotBtn:hover {
+  fill: $main-color;
+}
+.adddogSpotTitle {
+  font-weight: $subtitle;
+  font-size: 30px;
+}
+.add-dogSpot__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.add-dogSpot__input {
+  border-radius: 15px;
+  padding: 10px;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: $broken-white;
+  overflow: hidden;
+  width: 40%;
+  max-width: 40vw;
+  font-size: 14px;
+}
+.add-dogSpot__dropdown {
+  background-color: $broken-white;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  width: 40%;
+  max-width: 40vw;
+  font-size: 14px;
+}
+.dogspot-searchbar {
+  border-radius: 15px;
+  padding: 10px;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: $broken-white;
+  overflow: hidden;
+  width: 90%;
+
+  font-size: 14px;
+}
